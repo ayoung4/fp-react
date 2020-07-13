@@ -1,0 +1,39 @@
+{
+  "name": "fp-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./lib",
+    "compile": "tsc -p tsconfig.json",
+    "test": "ts-mocha ./tests/*.tsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/mocha": "^7.0.2",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "chai": "^4.2.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "mocha": "^8.0.1",
+    "ts-mocha": "^7.0.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "enzyme": "^3.11.0",
+    "fp-ts": "^2.6.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
